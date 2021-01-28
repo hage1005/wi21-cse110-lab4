@@ -24,6 +24,7 @@
 12. It won't return  becuase line 6 will give the error "Assignment to const variable".
 
 13. 
+
 	a. student.name
 
 	b. student['Grad Year']
@@ -34,6 +35,7 @@
 
 	e. student.courseLoad[0]
 14.
+
 	a. '32', 2 is converted to a string, and '+' means concatonate.
 
 	b. 1, "3" is converted to a number, and '-' is arithmatic substraction.
