@@ -1,8 +1,11 @@
 DevTools - Debugging
+
 	1. The bug was that num1 and num2 are taken as strings, and '+' concatenates instead of adds. 
+	
 	2. I fixed them by changing the the '+' to '-', forcing JS to type convert, and return the negation of result.
 
 DevTools - Network tab
+
 	1. citylots.json
 	2. part2.js
 	3. 1687628 bytes
