@@ -4,26 +4,35 @@
 
 3. 150 will be printed because finalPrice is a function-level variable decalred using 'var', and it's last updated value was 150.
 
-4. [50, 100, 150], because the function iterates over each price and discount them, store them in a new array, and return the new array.
+4. [50, 100, 150], because the function iterates over each price and discount them(price * 0.5), multiply and divide by 100, store them in a new array, and return the new array.
 
 5. Error: "i is not defined", because 'i' was declared by 'let', so it's only visible inside its scope, and line 11 is out of the block in which i was defined.
 
 6. Error: "discountedPrice is not defined", because 'discountedPrice' was declared by 'let', so it's only visible inside its scope, and line 12 is out of the block in which i was defined.
 
-7. Error: "finalPrice is not defined", because 'finalPrice' was declared by 'let', so it's only visible inside its scope, and line 13 is out of the block in which i was defined.
+7, It will print finalPrice without error since it's declared within the scope of this function. 
 
-8. [50, 100, 150], because the function iterates over each price and discount them, store them in a new array, and return the new array.
-
-9. It won't reach line 11 becuase line 6 will give the error "Assignment to const variable".
+8. [50, 100, 150], because the function iterates over each price and discount themi(price * 0.5), multiply and divide by 100, store them in a new array, and return the new array.
 
  
-10. It won't reach line 12 becuase line 6 will give the error "Assignment to const variable".
+9. Error: "i is not defined", because 'i' was declared by 'let', so it's only visible inside its scope, and line 11 is out of the block in which i was defined.
+ 
+10. Error: "discountedPrice is not defined", because 'discountedPrice' was declared by 'let', so it's only visible inside its scope, and line 12 is out of the block in which i was defined.
 
-11. It won't reach line 11 becuase line 6 will give the error "Assignment to const variable".
+11. Will throw error because finalPrice is declared as a constant variable, and we can't reassign it. 
 
-12. It won't return  becuase line 6 will give the error "Assignment to const variable".
+12.
+The instruction isn't very clear, so here are some assumptions. 
+Case 1: assignment was successful
 
-13. 
+Will print [50, 100, 150], because the function iterates over each price and discount them(price * 0.5), multiply and divide by 100 , store them in a new array, and return the new array.
+
+Case 2: assignment was not successful
+
+Will print [], because const variables can't be altered.
+
+Case 3: it will cause error since it trys to reassign constant variable's value. 
+13.  
 
 	a. student.name
 
@@ -66,7 +75,7 @@
 
 	f. true, Boolean(2) becomes true, and true === true since they are the same type and have the same value.
 
-16. '==' first do typecheck. Two sides are converted to number if type mismatch. After type conversion, it returns true if two sides have the same value, false otherwise.
+16. '==' first convert two sides to number if their types mismatch. After type conversion, it returns true if two sides have the same value, false otherwise.
 '===' will return false immediately if two sides are of different types, otherwise it checks if two sides have the same value.
 
 17. "How are you", becuase (2 == true) is false becuase true will be converted to 1, and 2 == 1 is false. The next statement (2) is true because 2 will be converetd to true. Thus the else if is executed.
